@@ -314,6 +314,12 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+
+
+.logobg{
+  display: none
+}
+
   .banner {
     .container {
       @include flex(center, none, column);

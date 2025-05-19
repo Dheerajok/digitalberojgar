@@ -6,7 +6,7 @@ import { BiUser } from "react-icons/bi"
 export const home = [
   {
     icon: <AiOutlineCalendar size={25} />,
-    title: "10+ years of market experience",
+    title: "4+ years of market experience",
   },
   {
     icon: <TfiRulerPencil size={25} />,
@@ -14,7 +14,7 @@ export const home = [
   },
   {
     icon: <VscFileSubmodule size={25} />,
-    title: "100+ cuccessful cases in portfolio",
+    title: "Multiple successful cases in portfolio",
   },
   {
     icon: <BiUser size={25} />,
@@ -24,21 +24,21 @@ export const home = [
 export const expertise = [
   {
     id: 1,
-    title: "Web Design & Development",
+    title: "Web Development",
     cover: "../images/e1.jpg",
     desc: [{ text: "Web design" }, { text: "Web development" }, { text: "Custom icons & illustrations" }, { text: "Hosting" }, { text: "Website audit" }],
   },
   {
     id: 2,
-    title: "Digital Marketing",
+    title: "Influencer Marketing",
     cover: "../images/e2.jpg",
-    desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }, { text: "SEO" }],
+    desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }, { text: "Influencer Marketing" }],
   },
   {
     id: 3,
-    title: "E-Commerce",
+    title: "Social Media Management",
     cover: "../images/e3.jpg",
-    desc: [{ text: "E-Commerce website design" }, { text: "WooCommerce" }, { text: "Content management" }, { text: "Hosting" }],
+    desc: [{ text: "Social Media" }, { text: "Social Media Management" }, { text: "Content management" }, { text: "Social Media handel" }],
   },
   {
     id: 4,
