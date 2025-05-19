@@ -1,14 +1,13 @@
-import { blogdata } from "@/assets/data/dummydata"
-import Banner from "@/components/Banner"
-import { Title, TitleSm } from "@/components/common/Title"
-import Head from "next/head"
-import { useRouter } from "next/router"
-import React from "react"
+import { blogdata } from "@/assets/data/dummydata";
+import Banner from "@/components/Banner";
+import { Title, TitleSm } from "@/components/common/Title";
+import Head from "next/head";
+import React from "react";
 
-const SinglePost = () => {
-  const router = useRouter()
-  const { id } = router.query
-  const post = blogdata.find((post) => post.id === parseInt(id))
+const SinglePost = ({ post }) => { // Receive post as a prop
+  if (!post) {
+    return <div>Loading...</div>; // Or render a 404 page
+  }
 
   return (
     <>
@@ -46,7 +45,31 @@ const SinglePost = () => {
         </div>
       </section>
     </>
-  )
+  );
+};
+
+export default SinglePost;
+
+export async function getStaticPaths() {
+  const paths = blogdata.map((post) => ({
+    params: { id: post.id.toString() }, // Make sure id is a string
+  }));
+
+  return { paths, fallback: false }; // fallback: false means any paths not returned by getStaticPaths will result in a 404 page.
 }
 
-export default SinglePost
+export async function getStaticProps({ params }) {
+  const post = blogdata.find((post) => post.id === parseInt(params.id));
+
+  if (!post) {
+    return {
+      notFound: true, // Return a 404 page if the post is not found
+    };
+  }
+
+  return {
+    props: {
+      post,
+    },
+  };
+}
