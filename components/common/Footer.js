@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2024 Digitalberojgar. ALL RIGHTS RESERVED.</span>
+              <span>© 2025 Digitalberojgar. ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
               <span>Digital Agency</span>

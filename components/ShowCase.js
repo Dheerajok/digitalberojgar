@@ -11,7 +11,7 @@ const ShowCase = () => {
       <section className='showcase'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='Selected cases' />
+            <Title title='Creators We are Connected To' />
           </div>
           <div className='hero-content grid-3 py'>
             {showcase.map((item) => (
@@ -19,7 +19,7 @@ const ShowCase = () => {
             ))}
           </div>
           <div className='card links'>
-            <Link href='/'>
+            <Link href='/showcase'>
               VIEW ALL CASES <HiOutlineArrowRight className='link-icon' />
             </Link>
           </div>
