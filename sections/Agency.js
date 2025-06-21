@@ -20,7 +20,7 @@ const Agency = () => {
               <p className='desc-p'>We specialize in Website Development, Influencer Marketing, Social Media Management, and Branding & Creative Services. Whether you're a startup, creator, or established brand, we deliver end-to-end digital solutions that drive results. From building sleek websites to managing your online presence and boosting your brand, we do it all — with creativity, precision, and passion.</p>
               <div className='grid-3'>
                 <div className='box'>
-                  <h1 className='indigo'>4+</h1>
+                  <h1 className='indigo'>1+</h1>
                   <h3>Years of experience</h3>
                 </div>
                 <div className='box'>

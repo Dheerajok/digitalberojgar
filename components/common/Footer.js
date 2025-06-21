@@ -19,27 +19,25 @@ const Footer = () => {
               <br />
               <h3>+91 0000000000</h3>
               <br />
-              <button className='button-primary'>Request for quote</button>
+              <Link href={"/contact"}><button className='button-primary'>Request for quote</button></Link>
             </div>
             <ul>
               <h3>COMPANY</h3>
               <li>
-                <Link href='/'>About agency</Link>
+                <Link href='/agency'>About agency</Link>
               </li>
               <li>
-                <Link href='/'>Our team</Link>
+                <Link href='/team'>Our team</Link>
               </li>
               <li>
-                <Link href='/'>Showcase</Link>
+                <Link href='/showcase'>Showcase</Link>
               </li>
               <li>
-                <Link href='/'>Blog</Link>
+                <Link href='/blogs'>Blog</Link>
               </li>
+              
               <li>
-                <Link href='/'>Demo design system</Link>
-              </li>
-              <li>
-                <Link href='/'>Contact</Link>
+                <Link href='/contact'>Contact</Link>
               </li>
             </ul>
             <ul>
@@ -61,18 +59,18 @@ const Footer = () => {
               <h3>CONNECT</h3>
               <div className='connect'>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.facebook.com/profile.php?id=61558315373769'>
                     <BsFacebook size={25} />
                   </Link>
                 </li>
                 
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.instagram.com/digitalberojgar/'>
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.linkedin.com/company/digital-berojgar'>
                     <AiFillLinkedin size={25} />
                   </Link>
                 </li>
@@ -86,7 +84,12 @@ const Footer = () => {
             <div className='connect'>
               <span>Digital Agency</span>
               <span> &nbsp; | &nbsp; </span>
-              <span>TERMS & CONDITIONS</span>
+            <span>
+                {/* <Link href='/termCondition'> */}
+                    TERMS & CONDITIONS
+                  {/* </Link> */}
+                  </span>
+              
             </div>
           </div>
         </div>
@@ -94,5 +97,5 @@ const Footer = () => {
     </>
   )
 }
-
+//termCondition
 export default Footer

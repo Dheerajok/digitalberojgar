@@ -14,7 +14,7 @@ const ShowCase = () => {
             <Title title='Creators We are Connected To' />
           </div>
           <div className='hero-content grid-3 py'>
-            {showcase.map((item) => (
+            {showcase.slice(0,6).map((item) => (
               <Card data={item} key={item.id} />
             ))}
           </div>
