@@ -5,8 +5,10 @@ header {
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 999;
+
   .container {
     @include flex(center, space-between, none);
+
     nav {
       a {
         margin: 0 $xl-2;
@@ -14,9 +16,19 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .hero-container {
+    padding-top: 10rem;
+  }
+}
+
+
+
 .activeLink {
   position: relative;
   color: $green;
+
   &::after {
     content: "";
     position: absolute;
@@ -33,6 +45,7 @@ header {
     nav {
       display: none;
     }
+
     .openMenu {
       position: absolute;
       top: 75px;
@@ -44,6 +57,7 @@ header {
       display: flex;
       flex-direction: column;
       z-index: 999;
+
       a {
         width: 100%;
         display: block;
@@ -51,10 +65,12 @@ header {
         margin-bottom: 30px !important;
       }
     }
+
     .button-primary {
       display: none;
     }
   }
+
   .activeLink {
     &::after {
       display: none;

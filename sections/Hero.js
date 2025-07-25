@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className='container'>
+        <div className='container hero-container'>
           <TitleLogo title='Berojgar' caption='Digital' className='logobg' />
           <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
 

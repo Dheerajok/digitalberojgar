@@ -17,7 +17,7 @@ const Footer = () => {
               </span>
               <br />
               <br />
-              <h3>+91 0000000000</h3>
+              {/* <h3>+91 0000000000</h3> */}
               <br />
               <Link href={"/contact"}><button className='button-primary'>Request for quote</button></Link>
             </div>
@@ -86,7 +86,7 @@ const Footer = () => {
               <span> &nbsp; | &nbsp; </span>
             <span>
                 {/* <Link href='/termCondition'> */}
-                    TERMS & CONDITIONS
+                    {/* TERMS & CONDITIONS */}
                   {/* </Link> */}
                   </span>
               
