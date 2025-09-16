@@ -17,7 +17,7 @@ const Footer = () => {
               </span>
               <br />
               <br />
-              {/* <h3>+91 0000000000</h3> */}
+              <h3>+91 7987231856</h3>
               <br />
               <Link href={"/contact"}><button className='button-primary'>Request for quote</button></Link>
             </div>
@@ -26,9 +26,9 @@ const Footer = () => {
               <li>
                 <Link href='/agency'>About agency</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href='/team'>Our team</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href='/showcase'>Showcase</Link>
               </li>
